@@ -1,0 +1,706 @@
+<!--
+Last Updated: 2025-01-23
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    Font
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=MuseoModerno:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!--
+    css link
+    -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--
+    js link
+    -->
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--
+        Navbar (Navigation)
+        -->
+        <nav class = "navbar">
+            <ul class = "navbar-list">
+                <li class = "navbar-item">
+                    <button data-target="about">About</button>
+                </li>
+
+                <hr>
+
+                <li class = "navbar-item">
+                    <button data-target="portfolio">Portfolio</button>
+                </li>
+
+                <hr>
+
+                <li class = "navbar-item">
+                    <button data-target="resume">Resume</button>
+                </li>
+
+                <hr>
+
+                <li class = "navbar-item">
+                    <button data-target="contact">Contact</button>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+        <main>
+            <!--
+            Main Content
+            -->
+            <div class="main-content">
+                <!--
+                About Section
+                -->
+                <div class="content-section" id="about"> 
+                    <header>
+                        <h2>About Me</h2>
+                    </header>
+                    
+                    <hr>
+
+                    <section class="about-information">
+                        <p>
+                            Hello! I'm Jonathan Chiu, a Game Developer and Artist living in Markham, Ontario. Currently, I am studying Computer Science at the University of Windsor.
+                        </p>
+
+                        <p>
+                            I fell in love with programming and visual designs at a young age and have dedicated my passion towards these industries.
+                            My aim is to always deliver quality products through hard work and dedication and to help clients achieve their visions.
+                        </p>
+                    </section>
+                    
+                    <header>
+                        <h2>What I Do</h2>
+                    </header>
+
+                    <section class="about-work">
+                        <div class="about-gallery">
+                            <img src="./assets/images/about/SamuraiWatermark.gif" alt="Samurai GIF">
+                            <div class="about-desc">Visual Arts</div>
+                        </div>
+
+                        <div class="about-gallery">
+                            <img src="./assets/images/about/Game Controller.png" alt="Controller PNG">
+                            <div class="about-desc">Game Development</div>
+                        </div>
+
+                        <div class="about-gallery">
+                            <img src="./assets/images/about/Book.png" alt="Book PNG">
+                            <div class="about-desc">Narrative Design</div>
+                        </div>
+
+                        <div class="about-gallery">
+                            <img src="./assets/images/about/Monitor.png" alt="Monitor PNG">
+                            <div class="about-desc">Software Development</div>
+                        </div>
+                    </section>
+                </div>
+
+
+    
+                <!--
+                Portfolio Section
+                -->
+                <div class="content-section" id="portfolio">
+                    <header>
+                        <h2>Portfolio</h2>
+                        
+                        <hr>
+
+                        <section class="filter">
+                            <ul class="filter-list">
+                                <li>
+                                    <button class="filter-btn" data-filter="all">All</button>
+                                </li>
+
+                                <li>
+                                    <button class="filter-btn" data-filter="arts">Arts</button>
+                                </li>
+
+                                <li>
+                                    <button class="filter-btn" data-filter="games">Games</button>
+                                </li>
+
+                                <li>
+                                    <button class="filter-btn" data-filter="story">Story</button>
+                                </li>
+
+                                <li>
+                                    <button class="filter-btn" data-filter="software">Software</button>
+                                </li>
+                            </ul>
+                            
+                            <div class="portfolio-container">
+                                <!--
+                                Portfolio Items
+                                -->
+                                <div class="portfolio-item" 
+                                    data-title="Bench Girl (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt given was to make Ciri from The Witcher series sit on a bench" 
+                                    data-image="./assets/images/portfolio/BenchgirlWatermark.gif" alt="Thumbnail" style="max-width: 150px;"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/BenchgirlWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Bench Girl</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Birthday Boy (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to create a pixel art about a man inside of a birthday cake suit" 
+                                    data-image="./assets/images/portfolio/BirthdayBoyWatermark.png"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/BirthdayBoyWatermark.png" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Birthday Boy</figcaption>
+                                    </figure>
+                                </div>
+                                
+                                <div class="portfolio-item" 
+                                    data-title="Budgeting App" 
+                                    data-description="A Budgeting application made for a university project done in a group of 4. The application uses android studio and SQLite to store the information inside of the application. I was in charge of designing and writing the functionality for the home page, creation of SQL, and SQLHelper which communicates between the SQL and the application. The SQLHelper was to be used by the rest of the application as the main method of communication between application and the database" 
+                                    data-image="./assets/images/portfolio/BudgetApp.png"
+                                    data-category="software">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/BudgetApp.png" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Budgeting App</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Cheetah Spirit (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to create a lady with the ability to transform into a Cheetah" 
+                                    data-image="./assets/images/portfolio/Cheetah SpiritWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/Cheetah SpiritWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Cheetah Spirit</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Donate NPC Minecraft Plugin (Commision)" 
+                                    data-description="A commision done for a minecraft server. The commission involved the creation of a donation plugin for minecraft version 1.19.4. Inside the plugin, players have the ability to donate through a simplistic menu to a fixed goal set by an administrator. The administrators are also allowed to create custom NPCs and load any skin onto them if the players do not wish to use the /donate command. All player and donation data are saved on the server to be later retrieved." 
+                                    data-image="./assets/images/portfolio/DonateNPCPlugin.png"
+                                    data-category="games">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/DonateNPCPlugin.png" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Donate Plugin</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Fire Dragon (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a large red dragon flying in the air" 
+                                    data-image="./assets/images/portfolio/FireDragonWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/FireDragonWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Fire Dragon</figcaption>
+                                    </figure>
+                                </div>
+                                
+                                <div class="portfolio-item" 
+                                    data-title="Fire Mage (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a mage with the ability to wield fire" 
+                                    data-image="./assets/images/portfolio/FireMageWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/FireMageWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Fire Mage</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Forest Witch (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a witch girl with red hair" 
+                                    data-image="./assets/images/portfolio/ForestWitchWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/ForestWitchWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Forest Witch</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Goblin Merchant (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a goblin merchant where he would reveal his wares to the user" 
+                                    data-image="./assets/images/portfolio/GoblinMerchantWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/GoblinMerchantWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Goblin Merchant</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Gura (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design the Gura VTuber avatar in a pixel art format" 
+                                    data-image="./assets/images/portfolio/GuraWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/GuraWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Gura</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Hellsinger (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was a demon with a floating sigil behind his back" 
+                                    data-image="./assets/images/portfolio/HellsingerWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/HellsingerWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Hellsinger</figcaption>
+                                    </figure>
+                                </div>
+                                
+                                <div class="portfolio-item" 
+                                    data-title="Hexchess (In Progress)" 
+                                    data-description="A chess game designed around the Gliński's version of chess. Still in development, utilizes C# and the Unity game engine." 
+                                    data-image="./assets/images/portfolio/HexChess.png"
+                                    data-category="games">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/HexChess.png" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Hexchess</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Russell (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a pixel art based off the players self made avatar" 
+                                    data-image="./assets/images/portfolio/RussellWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/RussellWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Russell</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Samurai" 
+                                    data-description="A practice pixel art to get used to drawing pixel art. Based on Japanese samurais " 
+                                    data-image="./assets/images/portfolio/SamuraiWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/SamuraiWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Samurai</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Sea Monster (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a Cthulu like monster with the ability to phase in and out of reality" 
+                                    data-image="./assets/images/portfolio/SeamonsterWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/SeamonsterWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Sea Monster</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Simple Runes Minecraft Plugin (Commision)" 
+                                    data-description="A commision done for a Minecraft server. The commision involved in implementing custom decorative items to the game. Features of the plugin involve the ability to create blank runes/scrolls and inscribe them in a simplistic yet efficent menu. It also allows moderators to grant special scrolls to players when deemed nessesary" 
+                                    data-image="./assets/images/portfolio/SimpleRunesPlugin.png"
+                                    data-category="games">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/SimpleRunesPlugin.png" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Runes Plugin</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Spiked Snail (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a snail with the ability to extend a spiked back armor" 
+                                    data-image="./assets/images/portfolio/SnailWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/SnailWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Spiked Snail</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Snowboarder (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a first-person snowboarder going down a hill, ending with the snowboarder shooting snow towards the camera with a cool ending pose" 
+                                    data-image="./assets/images/portfolio/SnowboarderWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/SnowboarderWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Snowboarder</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Spirit Former (Commision)" 
+                                    data-description="A commision done for a player inside the SimpleMMO game. The prompt was to design a buff character with the ability to change between different animal forms" 
+                                    data-image="./assets/images/portfolio/SpritFormerWatermark.gif"
+                                    data-category="arts">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/SpritFormerWatermark.gif" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Spirit Former</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Web Study #1" 
+                                    data-description="A project done in web design for university. A proof of concept for a potential store. Contains log in functionalities, along with shopping cart and checkout. Done through HTML, CSS, and Javascript" 
+                                    data-image="./assets/images/portfolio/WebDev1.png" alt="Thumbnail" style="max-width: 150px;"
+                                    data-category="software">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/WebDev1.png" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Web Study #1</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="Web Study #2" 
+                                    data-description="A project done in web design for university. Contains basic functionalities through the use of HTML, CSS, and Javascript." 
+                                    data-image="./assets/images/portfolio/WebDev2.png" alt="Thumbnail" style="max-width: 150px;"
+                                    data-category="software">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/WebDev2.png" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>Web Study #2</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="portfolio-item" 
+                                    data-title="2048 Study" 
+                                    data-description="A project done in High School during 2022 to create a simple application. Done in Java 1.4.1. Done using drawing tools and pure java without the aid of a game engine." 
+                                    data-image="./assets/images/portfolio/2048.png" alt="Thumbnail" style="max-width: 150px;"
+                                    data-category="games">
+                                    <figure>
+                                        <img src="./assets/images/portfolio/2048.png" alt="Thumbnail" style="max-width: 150px;">
+                                        <figcaption>2048 Study</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </header>
+                </div>
+    
+                <!--
+                Resume Section
+                -->
+                <div class="content-section" id="resume">
+                    <section id="resume">
+                            
+                        <header>
+                            <h2>Resume</h2>
+                        </header>
+
+                        <hr>
+
+                        <!--
+                        Resume Header
+                        -->
+                        <div class="resume-header">
+                            <h1>Jonathan Chiu</h1>
+                            
+                            <p>Jr. Developer | Indie Game Developer | Visual Artist</p>
+                        </div>
+
+                        <!--
+                        Coding Proficency
+                        -->
+                        <div class="resume-body">
+                            <h3>Coding Languages</h3>
+                            <div id="resume-language-container">
+                                <div class="resume-languages">
+                                    <figure>
+                                        <img src="./assets/images/resume/JavaLogo.png" alt="Java">
+                                        <figcaption>Java</figcaption>
+                                    </figure>
+                                </div>
+                                
+                                <div class="resume-languages">
+                                    <figure>
+                                        <img src="./assets/images/resume/CSharpLogo.png" alt="C#">
+                                        <figcaption>C#</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="resume-languages">
+                                    <figure>
+                                        <img src="./assets/images/resume/LuaLogo.png" alt="Lua">
+                                        <figcaption>Lua</figcaption>
+                                    </figure>
+                                </div>    
+
+                                <div class="resume-languages">
+                                    <figure>
+                                        <img src="./assets/images/resume/CLogo.png" alt="C">
+                                        <figcaption>C</figcaption>
+                                    </figure>
+                                </div>    
+
+                                <div class="resume-languages">
+                                    <figure>
+                                        <img src="./assets/images/resume/PythonLogo.png" alt="Python">
+                                        <figcaption>Python</figcaption>
+                                    </figure>
+                                </div>    
+
+                                <div class="resume-languages">
+                                    <figure>
+                                        <img src="./assets/images/resume/HTMLLogo.png" alt="HTML">
+                                        <figcaption>HTML</figcaption>
+                                    </figure>
+                                </div>    
+
+                                <div class="resume-languages">
+                                    <figure>
+                                        <img src="./assets/images/resume/JavaScriptLogo.png" alt="Javascript">
+                                        <figcaption>Javascript</figcaption>
+                                    </figure>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--
+                        Work Experience
+                        -->
+                        <div class="resume-body">
+                            <h3>Work Experience</h3>
+                            <ul>
+                                <li>
+                                    <p class="resume-content-header">Markham Economist and Sun, Markham</p>
+                                    <p class="resume-content-position">Position: Carrier</p>
+                                    <p class="resume-content-date">January 2017 - July 2023</p>
+                                </li>
+
+
+                                <li>
+                                    <p class="resume-content-header">Film Camp In A Box, Markham</p>
+                                    <p class="resume-content-position">Position: Camp Instructor</p>
+                                    <p class="resume-content-date">July 2022 - September 2022</p>
+                                </li>
+
+                                
+                                <li>
+                                    <p class="resume-content-header">Film Camp In A Box, Markham</p>
+                                    <p class="resume-content-position">Position: Camp Instructor</p>
+                                    <p class="resume-content-date">July 2023 - August 2023</p>
+                                </li>
+
+                                
+                                <li>
+                                    <p class="resume-content-header">Brickworks Academy, North York</p>
+                                    <p class="resume-content-position">Position: Health & Safety Coordinator</p>
+                                    <p class="resume-content-date">July 2024 - August 2024</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <!--
+                        Volunteer Experience
+                        -->
+                        <div class="resume-body">
+                            <h3>Volunteer Experience</h3>
+                            <ul>
+                                <li>
+                                    <p class="resume-content-header">St.John Ambulance (200+ Hours)</p>
+                                    <p class="resume-content-position">Position: St.John Ambulance Cadet Volunteer</p>
+                                    <p class="resume-content-date">June 2012 - September 2021</p>
+                                </li>
+
+                                
+                                <li>
+                                    <p class="resume-content-header">Koinonia Camp (279 Hours)</p>
+                                    <p class="resume-content-position">Position: Children Camp Leader</p>
+                                    <p class="resume-content-date">July 2019 - August 2019</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <!--
+                        Education
+                        -->
+                        <div class="resume-body">
+                            <h3>Education</h3>
+                            <ul>
+                                <li>
+                                    <p class="resume-content-header">University of Windsor (Bachelors of Science)</p>
+                                    <p class="resume-content-date">September 2022 - Present</p>
+                                </li>
+
+                                <li>
+                                    <p class="resume-content-header">Milliken Mills High School (High School Diploma)</p>
+                                    <p class="resume-content-date">September 2018 - June 2022</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <!--
+                        Skills
+                        -->
+                        <div class="resume-body">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li> <p>First Aid</p> </li>
+                                <li> <p>Leadership</p> </li>
+                                <li> <p>Responsible</p> </li>
+                                <li> <p>Adaptable</p> </li>
+                                <li> <p>Visual Arts</p> </li>
+                                <li> <p>Organized</p> </li>
+                                <li> <p>Team Cooperation</p> </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <!--
+                        Certificates
+                        -->
+                        <div class="resume-body">
+                            <h3>Certificates</h3>
+                            <ul>
+                                <li>
+                                    <p class="resume-content-header">CPR/AED Level C Certificate</p>
+                                    <p class="resume-content-date">2021 - 2024</p>
+                                </li>
+                                
+                                <li>
+                                    <p class="resume-content-header">SJA Connect - Leadership Level 1 Certificate</p>
+                                    <p class="resume-content-date">June 2021</p>
+                                </li>
+
+                                <li>
+                                    <p class="resume-content-header">St.John Ambulence Youth Unit Certification of Competition</p>
+                                    <p class="resume-content-date">April 2015</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <!--
+                        Awards
+                        -->
+                        <div class="resume-body">
+                            <h3>Awards</h3>
+                            <ul>
+                                <li>
+                                    <p class="resume-content-header">Milliken Mills High School Grade 12 Honor Roll</p>
+                                    <p class="resume-content-date">June 2022</p>
+                                </li>
+
+                                <li>
+                                    <p class="resume-content-header">Milliken Mills High School Grade 11 Honor Roll</p>
+                                    <p class="resume-content-date">June 2021</p>
+                                </li>
+
+                                <li>
+                                    <p class="resume-content-header">Milliken Mills High School Grade 11 Communicatons Technology Award</p>
+                                    <p class="resume-content-date">2021</p>
+                                </li>
+
+                                <li>
+                                    <p class="resume-content-header">Milliken Mills High School Student of the Month</p>
+                                    <p class="resume-content-date">October 2020</p>
+                                </li>
+                                
+                                <li>
+                                    <p class="resume-content-header">Ontario Volunteer Services Awards 2019</p>
+                                    <p class="resume-content-date">2019</p>
+                                </li>
+                                
+                                <li>
+                                    <p class="resume-content-header">St.John Ambulance 100 Hours Voluntary Community Service</p>
+                                    <p class="resume-content-date">2018</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section> 
+                </div>
+        
+                <!--
+                Contact Section
+                -->
+                <div class="content-section" id="contact">
+
+                    <header>
+                        <h2>Contact</h2>
+                    </header>
+
+                    <hr>
+                    
+                    <p>
+                        Want to chat? Send me an E-mail!
+                    </p>
+
+                    <button>
+                        <p><a href="mailto:1020JonathanChiu@gmail.com" class="side-info-desc">Send Email</a></p>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!--
+        Sidebar (Contacts)
+        -->
+        <aside class="side-info">
+            <h1>Info</h1>
+
+            <hr>
+
+            <div class="side-info-block">
+                <h1 class="side-info-header">EMAIL</h1>
+                <p><a href="mailto:1020JonathanChiu@gmail.com" class="side-info-desc">1020JonathanChiu@gmail.com</a></p>
+            </div>
+
+            <div class="side-info-block">
+                <h1 class="side-info-header">LINKEDIN</h1>
+                <p><a href="https://www.linkedin.com/in/jonathan-chiu-729217235" class="side-info-desc">Click Here</a></p>
+            </div>
+
+            <div class="side-info-block">
+                <h1 class="side-info-header">LOCATION</h1>
+                <p class="side-info-desc">Markham, Ontario, Canada</p>
+            </div>
+        </aside>
+    </div>
+
+    <!--
+    Modal for portfolio
+    -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Portfolio Image">
+                <div class="modal-text">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                </div>   
+            </div>
+        </div>
+    </div>
+</body>
